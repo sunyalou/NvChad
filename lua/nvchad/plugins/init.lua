@@ -2,7 +2,8 @@ return {
   "nvim-lua/plenary.nvim",
 
   {
-    "nvchad/base46",
+    "sunyalou/base46",
+    branch = "dev_yalou",
     build = function()
       require("base46").load_all_highlights()
     end,
@@ -137,8 +138,8 @@ return {
         "hrsh7th/cmp-nvim-lua",
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
-        "https://codeberg.org/FelipeLema/cmp-async-path.git"
-      }
+        "https://codeberg.org/FelipeLema/cmp-async-path.git",
+      },
     },
     opts = function()
       return require "nvchad.configs.cmp"
